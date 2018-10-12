@@ -100,7 +100,8 @@ module.exports = function (grunt) {
 		// Concurrent allows processing tasks concurrently!
 		concurrent: {
 			options: {
-				logConcurrentOutput: true
+				logConcurrentOutput: true,
+				limit: 10
 			},
 			build: [
 				'watch:less',
