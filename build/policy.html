@@ -6,7 +6,7 @@
   
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title> | </title>
+<title>GUIDELINE | </title>
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
@@ -17,11 +17,10 @@
 
 <link rel="stylesheet" href="assets/css/styles.css" />
 
-
-
-
 </head>
-<body class="col1-full-layout">
+
+
+<body class="col1-full-layout" onload="readFile();">
     <div class="page-wrap">
         
 
@@ -29,21 +28,46 @@
         <div id="mobile-wrap">
             <div id="content" class="content">
                 <div class="main" role="main">
+
+                    <div class="container" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+                        <div class="topnav" id="myTopnav">
+                            <a href="index.html" class="active" style="float: left;"><img src="../../assets/images/logo.png" width="110" height="22"></a>
+                            <a href="#none">&nbsp;</a>
+                            <a href="#contactUS">FEATURES</a>
+                            <a href="policy.html">GUIDELINE</a>
+                            <div class="dropdown">
+                                    
+                                    
+                            </div> 
+                            <a href="#row">CAPTION_IT! WHAT?</a>
+                            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                        </div>
+                        <div>
+                            <h2>Privacy Policy</h2>
+                            <div id="policy"></div>
+                            <script type="text/javascript"></script>
+                        </div>
                   
+                    </div>
+                
                 </div>
-            </div>
             
 
+            </div>
         </div>
-    </div>
+    </div>    
     
+    <script id="policyText">
+                                
+    </script>
 
 <!-- Includes site-specific Javascript -->
-<script src="/js/vendor/jquery-3.3.1.min.js"></script>
-<script src="/js/vendor/popper.min.js"></script>
-<script src="/js/vendor/bootstrap.min.js"></script>
-<script src="/js/vendor/handlebars.min.js"></script>
-<script src="/js/main.js"></script>
+    <script src="/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="/js/vendor/popper.min.js"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="/js/vendor/handlebars.min.js"></script>
+    <script src="/js/main.js"></script>
 
 
 </body>
