@@ -10,8 +10,7 @@ $(document).ready(function(){
         scrollTo("#review-form");
      });
 
-})
-
+    })
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -20,16 +19,10 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-
-function scrollTo(to){
+  function scrollTo(to){
         $('html, body').animate({
             scrollTop:  ($(to).offset().top)
         }, 2000);
 }
 
-function readFile(){
-    jQuery.get('CaptionIt Privacy Policy.txt', function(txt) {
-        $('#policy').text(txt);
-    })
-}
 
